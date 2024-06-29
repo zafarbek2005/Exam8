@@ -14,7 +14,7 @@ const Caralog = () => {
   <div className="catalog container">
     <div className="catalog_nav">
         <h3>Каталог</h3>
-        <button>Весь каталог <GoArrowRight/> </button>
+        <button id='katalog'>Весь каталог <GoArrowRight/> </button>
     </div>
     <div className="carts container">
       <div className="cart1">
@@ -26,52 +26,42 @@ const Caralog = () => {
       </div>
       <div className="cart1">
           <div className="items">
-            <h3>Люстры</h3>
+            <h3>Светильники</h3>
             <img src= {Img1} alt="img.png" />
           </div>
           <span>От 540₽ <GoArrowRight/> </span>
       </div>
       <div className="cart1">
           <div className="items">
-            <h3>Люстры</h3>
+            <h3>Бра</h3>
             <img src= {Img2} alt="img.png" />
           </div>
           <span>От 540₽ <GoArrowRight/> </span>
       </div>
       <div className="cart1">
           <div className="items">
-            <h3>Люстры</h3>
+            <h3>Торшеры</h3>
             <img src= {Img3} alt="img.png" />
           </div>
           <span>От 540₽ <GoArrowRight/> </span>
       </div>
       <div className="cart1">
           <div className="items">
-            <h3>Люстры</h3>
+            <h3>Настольные лампы</h3>
             <img src= {Img4} alt="img.png" />
           </div>
           <span>От 540₽ <GoArrowRight/> </span>
       </div>
       <div className="cart1">
           <div className="items">
-            <h3>Люстры</h3>
+            <h3>Споты</h3>
             <img src= {Img5} alt="img.png" />
           </div>
           <span>От 540₽ <GoArrowRight/> </span>
       </div>
-
-
-
-
-
-
-
-
-
-
-
-
     </div>
+    <button id='katalog1'>Весь каталог <GoArrowRight/> </button>
+
 
 
     

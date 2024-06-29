@@ -80,7 +80,7 @@
             padding-left: 95px;
             p{
             font-family: Manrope;
-            font-size: 52px;
+            font-size: 42px;
             font-weight: 700;
             line-height: 87.42px;
             max-width: 588px;
@@ -90,14 +90,15 @@
             width: 100%;
           }
           button{
-            width: 495px;
+            max-width: 495px;
             height: 86px;
             border-radius: 100px;
             opacity: 0px;
             background: #454545;
             color: #fff;
-            font-size: 60px;
-            margin-top: -40px;
+            font-size: 32px;
+            margin-top: -5px;
+            width: 100%;
           }
         }
     }  
@@ -122,7 +123,7 @@
             padding-left: 95px;
             p{
             font-family: Manrope;
-            font-size: 28px;
+            font-size: 32px;
             font-weight: 700;
             line-height: 87.42px;
             max-width: 588px;
@@ -132,13 +133,14 @@
             width: 100%;
           }
           button{
-            width: 495px;
+            max-width: 495px;
             height: 86px;
             border-radius: 100px;
             opacity: 0px;
             background: #454545;
             color: #fff;
-            font-size: 24px;
+            font-size:28px;
+            width: 100%;
             margin-top: -40px;
           }
         }
