@@ -1,11 +1,11 @@
-import React, { useState } from 'react'
+  import React, { useState } from 'react'
 import './Navbar.scss'
 import { Link } from 'react-router-dom'
 import logo from '../Header/img/logo.svg'
 import { RxHamburgerMenu } from "react-icons/rx";
-import { CiSearch , CiHeart , CiShoppingCart} from "react-icons/ci";
+import { CiSearch , CiHeart} from "react-icons/ci";
 import { TbAntennaBars5 } from "react-icons/tb";
-
+import { PiShoppingCartSimpleThin } from "react-icons/pi"
 
 const Header = () => {
 
@@ -72,7 +72,7 @@ const Header = () => {
                    </span>
                    <span>
                       <Link to={'/'}>
-                        <CiShoppingCart />  
+                        <PiShoppingCartSimpleThin />  
                         <p>Корзина</p>
                       </Link>
                    </span>

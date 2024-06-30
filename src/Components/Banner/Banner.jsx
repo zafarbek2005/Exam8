@@ -12,11 +12,11 @@ const Banner = () => {
  
    
    <Swiper
-    //  autoplay={{
-    //     delay: 2500,
-    //     disableOnInteraction: false,
-    //   }}
-        // loop={true}
+     autoplay={{
+        delay: 2500,
+        disableOnInteraction: false,
+      }}
+        loop={true}
         pagination={{
           dynamicBullets: true,
         }}
