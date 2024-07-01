@@ -1,4 +1,4 @@
-  import React, { useState } from 'react'
+import React, { useState } from 'react'
 import './Navbar.scss'
 import { Link } from 'react-router-dom'
 import logo from '../Header/img/logo.svg'

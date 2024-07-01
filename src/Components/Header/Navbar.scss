@@ -104,7 +104,7 @@ header{
                 font-weight: 600;
                 line-height: 21.86px;
             }
-            button:hover{
+            button:focus{
                 background-color: #fff;
                 color: #454545;
                 border: 1px solid #454545;
@@ -154,7 +154,7 @@ header{
 
     .media__inp{
         border: 1px solid #454545;
-        max-width: 626px;
+        width: 100%;
         border-radius: 50px;
         display: none;
         align-items: center;
@@ -184,6 +184,7 @@ header{
     }
     .media__inp{
         display: flex !important;
+        width: 100%;
         
     }
     .nav__bottom{
@@ -193,7 +194,7 @@ header{
     }
 }
 
-@media (max-width:850px) {
+@media (max-width:900px) {
     .nav__top ul{
         z-index: 10;
         padding: 24px;
@@ -228,6 +229,39 @@ header{
             flex-direction: column;
         }
     }
+    .nav__top{
+        .media-btn{
+            display: flex !important;
+        }
+        ul.show {
+            transform: scaleY(1);
+        }
+    }
+    .nav__icons{
+        gap: 15px !important;
+        span:nth-child(2) {
+            display: none !important;
+        }
+        span{
+            p{
+                display: none;
+            }
+            svg{
+                font-size: 30px !important;
+            }
+        }
+    }
+    .burger{
+        display: flex !important;
+        cursor: pointer;
+        background-color: transparent;
+        border: none;
+    }
+    .nav__bottom{
+        gap:20px;
+    }
+    
+    
 }
 
 
