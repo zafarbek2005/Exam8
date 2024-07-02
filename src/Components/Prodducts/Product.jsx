@@ -3,8 +3,12 @@ import React from 'react'
 import './product.scss'
 import { PiShoppingCartSimpleThin } from "react-icons/pi";
 import { CiHeart } from "react-icons/ci";
+import { useDispatch } from 'react-redux'
+import { Link } from "react-router-dom";
+
 
 const Product = ({data,isLoading,isError}) => {
+    const dispatch = useDispatch()
 
     let Products = data?.map(product => (
         <div className="product_cart" key={product.id}>
@@ -12,7 +16,9 @@ const Product = ({data,isLoading,isError}) => {
         <div className="product_image">
             <img src= {product.Image_url} alt={product.desc} />
         </div>
-        <h2>{product.title}</h2>
+        <Link  to={`products/${product.id}`}>
+             <h2>{product.title}</h2>
+        </Link>
         <div className="sena">
             <div className="old_sena">
                 <p id="oldprice">7 000₽</p>

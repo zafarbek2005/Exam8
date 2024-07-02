@@ -8,7 +8,8 @@ const Banner = () => {
     <div className="banner ">
 
         <div className="banner_txt conteiner ">
-          <h3>Скидка 15% <br /> на все подвесные <br /> светильники <br /> <mark id='banner_mark'>до 5 февраля</mark></h3>
+          <h3>Скидка 15% <br /> на все подвесные <br /> светильники </h3>
+          <button>до 5 февраля</button>
         </div>
 
         <div className="img conteiner">

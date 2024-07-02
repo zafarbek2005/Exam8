@@ -38,7 +38,7 @@ const Home_bootom = () => {
         <button id="none_btn">Перейти в блог <BiRightArrowAlt /></button>
         </div>
 
-        <div className="blog_carts">
+        <div className="blog_carts">    
             <div className="blog_cart">
                 <img src= {rasm} alt="rasm.svg" />
                 <div className="title_blog">

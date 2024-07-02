@@ -66,7 +66,7 @@
         img{
             max-width:400px;
             height: 216px;
-            object-fit: cover;
+            object-fit:contain;
             width: 100%;
             
         }
@@ -140,7 +140,7 @@
             img{
                 max-width:200px;
                 height: 216px;
-                object-fit: cover;
+                object-fit: contain;
                 width: 100%;
             }
         }
@@ -264,6 +264,7 @@
             position: absolute;
             padding-left: 130px;
             padding-top: 30px;
+            cursor: pointer;
             z-index: 1;
              svg{
                 font-size: 32px;
@@ -276,7 +277,7 @@
             img{
                 max-width:150px;
                 height: 216px;
-                object-fit: cover;
+                object-fit:contain;
                 width: 100%;
             }
         }
@@ -288,6 +289,7 @@
             font-weight: 500;
             line-height: 22px;
             color: #454545;
+            cursor: pointer;
         }
         .sena{
             display: flex;
@@ -297,6 +299,8 @@
             margin-top: -20px;
             .cart {
                 padding: 10px;
+                cursor: pointer;
+
               svg{
                 font-size: 32px;
                 border: 2px solid #FFFFFF;
@@ -306,7 +310,6 @@
                 background: #454545;
                 color: #FFFFFF;
                 border: 2px solid #FFFFFF;
-
               }
             }
         }

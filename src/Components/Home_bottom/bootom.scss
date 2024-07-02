@@ -93,15 +93,12 @@
     scroll-snap-type: x mandatory;
 
     .blog_cart {
-      max-width: 520px;
+      width: 520px;
       height: 456px;
       border-radius: 10px;
-      width: 100%;
       scroll-snap-align: start;
 
-      img {
-        width: 100%;
-      }
+   
 
       .title_blog {
         display: flex;
@@ -190,6 +187,10 @@ footer {
 @media(max-width:1280px){
   .cart{
     overflow-x: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:0 !important;
   }
 }
 @media(max-width: 900px){
@@ -197,7 +198,16 @@ footer {
         font-size: 24px !important;
         margin-left: 10px !important;
       }
-    
+      .blog_carts {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0 !important;
+        padding-top: 53px;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+
+      }
 }
 @media (max-width: 768px) {
     #none_btn2{
@@ -207,22 +217,6 @@ footer {
     #none_btn{
         display: none !important;
     }
-  .blog_carts {
-    .blog_cart {
-      max-width: 380px;
-      height: auto;
-
-      .title_blog {
-        gap: 20px;
-
-        h3 {
-          font-size: 18px;
-          max-width: 310px;
-          height: auto;
-        }
-      }
-    }
-  }
 
   h3 {
     font-size: 28px;
@@ -267,7 +261,7 @@ footer {
     .pss {
       p{
         font-family: Manrope;
-        font-size: 20px;
+        font-size: 16px !important;
         font-weight: 500;
         line-height: 30px;
         text-align: left;
@@ -283,28 +277,7 @@ footer {
 }
 
 @media (max-width: 600px) {
-  .blog_carts {
-    .blog_cart {
-      max-width: 420px;
-      height: auto;
-
-      .title_blog {
-        gap: 20px;
-
-        h3 {
-          font-size: 12px;
-          max-width: 280px;
-          height: auto;
-        }
-      }
-
-      p {
-        font-size: 12px;
-        padding-top: 10px;
-      }
-    }
-  }
-
+ 
   #gg {
     font-size: 22px;
     margin-left: 1px;
@@ -316,6 +289,7 @@ footer {
     p {
       margin-bottom: 200px !important;
       overflow: hidden;
+      font-size: 16px !important;
     }
   }
 }
