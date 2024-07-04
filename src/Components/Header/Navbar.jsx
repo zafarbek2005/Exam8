@@ -1,92 +1,92 @@
-import React, { useState } from 'react'
-import './Navbar.scss'
-import { Link } from 'react-router-dom'
-import logo from '../Header/img/logo.svg'
+import React, { useState } from 'react';
+import './Navbar.scss';
+import { Link } from 'react-router-dom';
+import logo from '../Header/img/logo.svg';
 import { RxHamburgerMenu } from "react-icons/rx";
-import { CiSearch , CiHeart} from "react-icons/ci";
+import { CiSearch, CiHeart } from "react-icons/ci";
 import { TbAntennaBars5 } from "react-icons/tb";
-import { PiShoppingCartSimpleThin } from "react-icons/pi"
+import { PiShoppingCartSimpleThin } from "react-icons/pi";
+import { useSelector } from "react-redux";
 
 const Header = () => {
-
-  let [menu, setmenu] = useState(false)
+  let [menu, setmenu] = useState(false);
+  const Wishes = useSelector(s => s.wishlist.value);
+  const carts = useSelector(s => s.cart.value);
 
   return (
     <>
-    <header>
-      <div className="conteiner">     
+      <header>
+        <div className="container">
           <div className="navbar">
-              <div className="nav__top">
-                  <div className="top__list">
-                    <ul className={menu ? "show" : ""} >
-                      <div className='links'>
-                        <Link onClick={() => setmenu(p => !p) }   to="/">О компании</Link>
-                        <Link onClick={() => setmenu(p => !p) }  to="/about">Доставка и оплата</Link>
-                        <Link onClick={() => setmenu(p => !p) }  to="/">Возврат</Link>
-                        <Link onClick={() => setmenu(p => !p) }  to="/">Гарантии</Link>
-                        <Link onClick={() => setmenu(p => !p) }  to="/contact">Контакты</Link>
-                        <Link onClick={() => setmenu(p => !p) }  to="/">Блог</Link>
-                      </div>
-                      <div  className="media-btn">
-                        <button><RxHamburgerMenu />
-                        Каталог</button>
-                      </div>
-                      <div className="top__tel">
-                          <p>8 (800) 890-46-56</p>
-                          <Link onClick={() => setmenu(p => !p) } >Заказать звонок</Link>
-                      </div>
-                    </ul>
+            <div className="nav__top">
+              <div className="top__list">
+                <ul className={menu ? "show" : ""}>
+                  <div className="links">
+                    <Link onClick={() => setmenu((p) => !p)} to="/about">О компании</Link>
+                    <Link onClick={() => setmenu((p) => !p)} to="/Доставка">Доставка и оплата</Link>
+                    <Link onClick={() => setmenu((p) => !p)} to="/Возврат">Возврат</Link>
+                    <Link onClick={() => setmenu((p) => !p)} to="/Гарантии">Гарантии</Link>
+                    <Link onClick={() => setmenu((p) => !p)} to="/contact">Контакты</Link>
+                    <Link onClick={() => setmenu((p) => !p)} to="/Блог">Блог</Link>
                   </div>
-              </div>
-              <div className="nav__bottom">
-                <div className="nav__logo">
-                  <div>
-                    <button onClick={() => setmenu(p => !p) } className="burger">
-                     <RxHamburgerMenu/>
-                    </button>
+                  <div className="media-btn">
+                    <button><RxHamburgerMenu /> Каталог</button>
                   </div>
-                 <a href="/">
-                   <img src={logo} alt="" />
-                  </a>
+                  <div className="top__tel">
+                    <p>8 (800) 890-46-56</p>
+                    <Link onClick={() => setmenu((p) => !p)}>Заказать звонок</Link>
+                  </div>
+                </ul>
+              </div>
+            </div>
+            <div className="nav__bottom">
+              <div className="nav__logo">
+                <div>
+                  <button onClick={() => setmenu((p) => !p)} className="burger">
+                    <RxHamburgerMenu />
+                  </button>
                 </div>
-                <div className="nav__inp">
-                   <button><RxHamburgerMenu />
-                   Каталог</button>
-                   <div className="inp">
-                      <input type="text" placeholder="Поиск по товарам" />
-                      <CiSearch />
-                   </div>
-                </div>
-                <div className="nav__icons">
-                   <span>
-                       <Link to={'/'}>
-                        <CiHeart />
-                          <p>Избранное</p>
-                        </Link>
-                   </span>
-                   <span>
-                      <Link to={'/'}>
-                        <TbAntennaBars5 />
-                        <p>Сравнение</p>
-                      </Link>
-                   </span>
-                   <span>
-                      <Link to={'/'}>
-                        <PiShoppingCartSimpleThin />  
-                        <p>Корзина</p>
-                      </Link>
-                   </span>
+                <a href="/">
+                  <img src={logo} alt="Logo" />
+                </a>
+              </div>
+              <div className="nav__inp">
+                <button><RxHamburgerMenu /> Каталог</button>
+                <div className="inp">
+                  <input type="text" placeholder="Поиск по товарам" />
+                  <CiSearch />
                 </div>
               </div>
-              <div className="media__inp">
-                 <input type="text" placeholder='Поиск по товарам' />
-                 <CiSearch />
+              <div className="nav__icons">
+                <span>
+                  <Link to={'/Wishes'}>
+                    <CiHeart /> <sup>{Wishes.length}</sup>
+                    <p>Избранное</p>
+                  </Link>
+                </span>
+                <span>
+                  <Link to={'/Сравнение'}>
+                    <TbAntennaBars5 />
+                    <p>Сравнение</p>
+                  </Link>
+                </span>
+                <span>
+                  <Link to={'/Product_Cart'}>
+                    <PiShoppingCartSimpleThin /><sup>{carts.length}</sup>
+                    <p>Корзина</p>
+                  </Link>
+                </span>
               </div>
+            </div>
+            <div className="media__inp">
+              <input type="text" placeholder="Поиск по товарам" />
+              <CiSearch />
+            </div>
           </div>
-      </div>
-    </header>
+        </div>
+      </header>
     </>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;
