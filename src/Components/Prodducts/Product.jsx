@@ -8,11 +8,15 @@ import { FaHeart, FaRegHeart } from "react-icons/fa";
 import {addToCart} from '../context/Cart/CartSlice'
 import { BsCartCheck } from "react-icons/bs";
 import { AiOutlineShoppingCart } from "react-icons/ai"; 
+import Skeleton from '../Skeleton/Sklet'
 
 const Product = ({ data, isLoading, isError }) => {
   const dispatch = useDispatch();
   let wishlist = useSelector(s => s.wishlist.value);
   let carts = useSelector(s => s.cart.value)
+  if (isLoading) {
+    return <h1 className='Container'><Skeleton/></h1>;
+  }
 
   let Products = data?.map(product => (
     <div className="product_cart" key={product.id}>

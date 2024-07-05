@@ -20,6 +20,7 @@
   justify-content: center;
   padding-bottom: 50px !important;
   padding: 10px;
+
   button {
     background-color: #f6f6f6;
     color: #000;
@@ -27,16 +28,53 @@
     max-width: 600px;
     width: 100%;
     border-radius: 15px;
+
     &:focus {
       transform: scale(.9);
     }
   }
 }
-  
+
+.img {
+  img {
+    width: 80px;
+    height: 80px;
+    border-radius: 15px;
+    object-fit: cover;
+  }
+}
+
+.opisaniye {
+  #h5 {
+    max-width: 250px;
+    width: 100%;
+    font-family: Manrope;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20.8px;
+    color: #454545;
+  }
+}
+
+#price {
+  font-family: Manrope;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 22px;
+  color: #454545;
+}
+
 .removeicon {
   font-size: 32px;
   color: red;
   cursor: pointer;
+}
+
+.kalichestvo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 40px !important;
 }
 
 table {
@@ -68,118 +106,6 @@ table {
   }
 }
 
-.total_waucher {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-
-  .waycher {
-    flex: 1;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-
-    input {
-      // flex: 1 1 auto;
-      max-width: 350px;
-      width: 100%;
-      height: 60px;
-      border: 2px solid #F1F3F4;
-      outline: none;
-      padding: 0 10px;
-    }
-
-    button {
-      flex: 0 0 auto;
-      height: 60px;
-      background: #33A0FF;
-      color: #fff;
-      border: none;
-      border-radius: 5px;
-      padding: 0 20px;
-    }
-  }
-
-  .chek {
-
-    .chekitem {
-      display: flex;
-      gap: 100px;
-      justify-content: space-between;
-      padding: 10px 0;
-
-      &:last-child {
-        border-bottom: none;
-      }
-
-      p {
-        font-size: 18px;
-        font-weight: 400;
-      }
-
-      #chekbtn {
-        margin-top: 10px;
-        width: 100%;
-        height: 60px;
-        background: #33A0FF;
-        border: none;
-        color: #F1F3F4;
-        border-radius: 5px;
-        font-size: 20px;
-      }
-    }
-  }
-}
-
-.tr {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-
-  .tr_th {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
-
-  .trrimg {
-    width: 100px;
-    height: 70px;
-    object-fit: contain;
-    border-radius: 7px;
-  }
-}
-
-.btns_table {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-
-  button {
-    border: none;
-    background: none;
-    font-size: 32px;
-    color: #33A0FF;
-    cursor: pointer;
-  }
-
-  span {
-    font-size: 24px;
-  }
-}
-
-.empty-cart {
-  text-align: center;
-  margin-top: 50px;
-
-  img {
-    max-width: 100%;
-    height: auto;
-  }
-}
-
 @media (max-width: 768px) {
   table {
     display: block;
@@ -200,7 +126,7 @@ table {
 
     td {
       padding: 10px;
-      text-align: right;
+      text-align: left;
       position: relative;
 
       &:before {
@@ -212,21 +138,6 @@ table {
         font-weight: bold;
         text-align: left;
       }
-    }
-  }
-
-  .tr {
-    flex-direction: column;
-    align-items: flex-start;
-
-    .tr_th {
-      width: 100%;
-    }
-
-    .trrimg {
-      width: 100%;
-      height: auto;
-      margin-bottom: 10px;
     }
   }
 
@@ -243,56 +154,6 @@ table {
       padding: 5px;
     }
   }
-
-  .total_waucher {
-    flex-direction: column;
-    gap: 10px;
-
-    .waycher {
-      width: 100%;
-      flex-direction: column;
-      align-items: stretch;
-
-      input, button {
-        width: 100%;
-      }
-    }
-
-    .chek {
-      width: 100%;
-      .chekitem {
-        flex-direction: column;
-        align-items: flex-start;
-
-        p {
-          width: 100%;
-          text-align: right;
-        }
-
-        #chekbtn {
-          font-size: 18px;
-        }
-      }
-    }
-  }
-}
-
-@media (max-width: 400px) {
-  .tr {
-    .trrimg {
-      margin-bottom: 10px;
-    }
-  }
-
-  .total_waucher {
-    .chek {
-      .chekitem {
-        p {
-          font-size: 16px;
-        }
-      }
-    }
-  }
 }
 
 .karzina {
@@ -301,11 +162,12 @@ table {
   background: #f2f2f2;
   border-radius: 20px;
   padding: 20px;
-  
+
   .karzina_table {
     width: 100%;
     border-collapse: collapse;
     text-align: left;
+
     thead {
       tr {
         th {
@@ -328,32 +190,15 @@ table {
           font-size: 16px;
           color: #454545;
           border-bottom: 1px solid #ddd;
-        }
 
-        .img {
-          img {
+          .img img {
             width: 80px;
             height: 80px;
             border-radius: 15px;
             object-fit: cover;
           }
-        }
 
-        .tovar h4 {
-          max-width: 174px;
-          height: auto;
-          font-weight: 600;
-          margin-bottom: 10px;
-        }
-
-        .tovar p {
-          font-size: 20px;
-          font-weight: 700;
-          padding-top: 22px;
-        }
-
-        .opisaniye{
-          #h5 {
+          .opisaniye #h5 {
             max-width: 250px;
             width: 100%;
             font-family: Manrope;
@@ -362,63 +207,239 @@ table {
             line-height: 20.8px;
             color: #454545;
           }
-        }
 
-        .artkul h5 {
-          width: 400px;
-          font-size: 16px;
-          font-weight: 400;
-        }
-
-        .kalichestvo {
-          display: flex;
-          align-items: center;
-          gap: 10px;
-
-          .btnss {
+          .kalichestvo {
             display: flex;
             align-items: center;
             gap: 10px;
 
-            button {
-              width: 40px;
-              height: 40px;
-              border-radius: 10px;
-              font-size: 24px;
-              background: none;
-              border: 0;
-              cursor: pointer;
+            .btnss {
               display: flex;
               align-items: center;
-              justify-content: center;
-            }
-            .button {
-              width: 40px;
-              height: 40px;
-              border-radius: 10px;
-              border: 1px solid #454545;
-              background: none;
-              cursor: pointer;
-              display: flex;
-              align-items: center;
-              justify-content: center;
+              gap: 10px;
+
+              button {
+                width: 40px;
+                height: 40px;
+                border-radius: 10px;
+                font-size: 24px;
+                background: none;
+                border: 1px solid #454545;
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              }
+
+              .button {
+                width: 40px;
+                height: 40px;
+                border-radius: 10px;
+                border: 1px solid #454545;
+                background: none;
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              }
+
+              span {
+                font-size: 24px;
+                cursor: pointer;
+              }
             }
 
-            span {
+            .removeicon {
               font-size: 24px;
               cursor: pointer;
+              color: #ff0000;
+              position: relative;
+              left: 30px;
             }
-          }
-
-          .removeicon {
-            font-size: 24px;
-            cursor: pointer;
-            color: #ff0000;
-            position: relative;
-            left: 30px;
           }
         }
       }
+    }
+  }
+}
+
+.empty-cart {
+  text-align: center;
+  margin-top: 50px;
+
+  img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  button {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+}
+
+.cart_form {
+  max-width:1300px;
+  width: 100%;
+  height: 650px;
+  border-radius: 20px;
+  background: #F2F2F2;
+  margin-top: 20px !important;
+   
+  h3 {
+    font-family: Manrope;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 35.2px;
+    color: #454545;
+    padding-top: 45px;
+    padding-left: 48px;
+    
+   }
+   
+   .inputs {
+     display: flex;
+     align-items: center;
+     flex-wrap: wrap;
+     gap: 20px;
+     padding-top: 45px;
+     padding-left: 48px;
+
+      .input {
+        max-width: 373px;
+        height: 49.03px;
+        border-radius: 100px;
+        border: 1px;
+        border: 1px solid #454545;
+        width: 100%;
+        display: flex;
+
+          input {
+            flex: 1;
+            border: 0;
+            background: 0;
+            outline: 0;
+            text-indent: 10px;
+          }
+      }
+   }
+   
+   .input2 {
+    padding-top: 45px;
+    padding-left: 48px;
+   }
+   
+   .input1 {
+    height: 49.03px !important;
+    border-radius: 100px;
+    border: 1px;
+    border: 1px solid #454545;
+    display: flex;
+    max-width: 767px;
+    width: 100%;
+    height: 100%;
+     input {
+      flex: 1;
+      border: 0;
+      background: 0;
+      outline: 0;
+      text-indent: 10px;
+     }
+   }
+   
+   .input3 {
+    max-width:767px;
+    height: 120.87px;
+    border-radius: 26px;
+    border: 1px;
+    border: 1px solid #454545;
+    width: 100%;
+    display: flex;
+    margin-top: 30px;
+    
+     input {
+      flex: 1;
+      border: 0;
+      background: 0;
+      outline: 0;
+      text-indent: 10px;
+     }
+   }
+}
+
+.input_bootom {
+  max-width: 1300px;
+  height: 361px;
+  border: 1px;
+  border: 1px solid #454545;
+  width: 100%;
+  border-radius: 20px;
+  margin-top: 98px;
+  background-color: #F2F2F2;
+  height: 100% !important;
+  padding-bottom: 52px;
+    
+  h3 {
+    padding-top: 20px;
+  }
+  
+  .tovar {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding-left: 49px;
+    padding-top: 32px;
+    
+    p {
+      color: #454545;
+    }
+  }
+  
+  form {
+    padding-left: 49px;
+    padding-top: 48px;
+    
+    h3 {
+      font-family: Manrope;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 26.4px;
+      color: #454545;
+    }
+    
+    .inp_p {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      
+      p {
+        padding-top: 25px;
+        padding-left: 25px;
+        font-family: Manrope;
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 15.6px;
+        color: #454545;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+    }
+    
+    button {
+      max-width: 324px;
+      height: 50px;
+      border-radius: 100px;
+      width: 100%;
+      color: #F2F2F2;
+      background-color: #454545;
+      margin-top: 30px;
     }
   }
 }

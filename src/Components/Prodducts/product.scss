@@ -149,8 +149,8 @@
     
         #like{
             position: absolute;
-            padding-left: 250px;
-            padding-top: 20px;
+            padding-left: 230px;
+            padding-top: 55px;
             z-index: 1;
              svg{
                 font-size: 32px;
@@ -167,8 +167,8 @@
             }
         }
         h2{
-            padding-left: 27px;
-            padding-top: 27px;
+            padding-left: 60px;
+            margin-top: -28px;
             font-family: Manrope;
             font-size: 18px;
             font-weight: 500;
@@ -180,7 +180,7 @@
             align-items: center;
             justify-content: space-around;
             gap: 1px;
-            padding-top: 24px;
+            padding-top: 8px;
     
             .cart {
                 padding: 10px;
@@ -193,6 +193,7 @@
                 background: #454545;
                 color: #FFFFFF;
                 border: 2px solid #FFFFFF;
+                overflow: hidden !important;
 
               }
             }
@@ -236,7 +237,7 @@
             }
         }
         h2{
-            padding-left: 27px;
+            padding-left: 43px;
             padding-top: 27px;
             font-family: Manrope;
             font-size: 16px;
@@ -249,8 +250,8 @@
             align-items: center;
             justify-content: space-around;
             gap: 1px;
-            padding-top: 24px;
-    
+            padding-top: 14px;
+            
             .cart {
                 padding: 10px;
               svg{
@@ -275,8 +276,6 @@
     .product{
       display: grid;
       grid-template-columns: repeat(2,1fr);
-        row-gap: 40px;
-        column-gap: 10px;
       .product_cart {
         max-width:200px;
         height: 380px;
@@ -317,7 +316,7 @@
             display: flex;
             align-items: center;
             justify-content: space-around;
-            margin-left: 18px;
+            margin-left: -22px;
             margin-top: -20px;
             .cart {
                 padding: 10px;

@@ -22,19 +22,19 @@ const Header = () => {
               <div className="top__list">
                 <ul className={menu ? "show" : ""}>
                   <div className="links">
-                    <Link onClick={() => setmenu((p) => !p)} to="/about">О компании</Link>
-                    <Link onClick={() => setmenu((p) => !p)} to="/Доставка">Доставка и оплата</Link>
-                    <Link onClick={() => setmenu((p) => !p)} to="/Возврат">Возврат</Link>
-                    <Link onClick={() => setmenu((p) => !p)} to="/Гарантии">Гарантии</Link>
-                    <Link onClick={() => setmenu((p) => !p)} to="/contact">Контакты</Link>
-                    <Link onClick={() => setmenu((p) => !p)} to="/Блог">Блог</Link>
+                    <Link  to="/about">О компании</Link>
+                    <Link  to="/Доставка">Доставка и оплата</Link>
+                    <Link  to="/Возврат">Возврат</Link>
+                    <Link  to="/Гарантии">Гарантии</Link>
+                    <Link  to="/contact">Контакты</Link>
+                    <Link  to="/Блог">Блог</Link>
                   </div>
                   <div className="media-btn">
                     <button><RxHamburgerMenu /> Каталог</button>
                   </div>
                   <div className="top__tel">
                     <p>8 (800) 890-46-56</p>
-                    <Link onClick={() => setmenu((p) => !p)}>Заказать звонок</Link>
+                    <Link>Заказать звонок</Link>
                   </div>
                 </ul>
               </div>
@@ -46,9 +46,9 @@ const Header = () => {
                     <RxHamburgerMenu />
                   </button>
                 </div>
-                <a href="/">
+                <Link to={"/"}>  
                   <img src={logo} alt="Logo" />
-                </a>
+                  </Link>
               </div>
               <div className="nav__inp">
                 <button><RxHamburgerMenu /> Каталог</button>
