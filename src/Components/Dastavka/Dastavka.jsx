@@ -23,12 +23,12 @@ const Dastavka = () => {
         </div>
       </div>
 
-      <div className="map">
+      <div className="map conteiner">
         <iframe 
           src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1535688.8301097043!2d69.24165026074219!3d41.25679469093319!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1suz!2s!4v1720171585590!5m2!1suz!2s" 
           width="600" 
           height="450" 
-          style={{border: 0}} 
+          style={{border: 0,borderRadius:"15px"}} 
           allowFullScreen="" 
           loading="lazy" 
           referrerPolicy="no-referrer-when-downgrade"

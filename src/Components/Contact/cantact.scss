@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
+}
+
+.conteiner {
+  max-width: 1304px;
+  width: 100%;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+.cantact_link {
+    padding-top: 11px;
+  a{
+    font-family: Manrope;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21.86px;
+    color: #454545;
+  }
+  svg{
+    font-size: 12px;
+  }
+}
+.kantact {
+    h3{
+        font-family: Manrope;
+        font-size: 64px;
+        font-weight: 700;
+        line-height: 70.4px;
+        color: #454545;
+    }
+  display: flex;
+  gap: 720px;
+  .txt {
+    h3{
+        font-family: Manrope;
+        font-size: 24px;
+        
+    }
+  }
+}
+.map {
+  padding-top: 53px;
+}
+@media(max-width:1200px){
+    .kantact {
+        h3{
+            font-family: Manrope;
+            font-size: 64px;
+            font-weight: 700;
+            line-height: 70.4px;
+            color: #454545;
+            display: none   ;
+        }
+      display: flex;
+      gap: 20px !important;
+      flex-wrap: wrap;
+      .txt {
+        h3{
+            font-family: Manrope;
+            font-size: 24px;
+            
+        }
+      }
+    }
+}

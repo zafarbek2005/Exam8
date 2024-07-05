@@ -25,8 +25,8 @@ const Header = () => {
                     <Link  to="/about">О компании</Link>
                     <Link  to="/dastavka">Доставка и оплата</Link>
                     <Link  to="/return">Возврат</Link>
-                    <Link  to="/Гарантии">Гарантии</Link>
-                    <Link  to="/contact">Контакты</Link>
+                    <Link  to="/garant">Гарантии</Link>
+                    <Link  to="/cantact">Контакты</Link>
                     <Link  to="/Блог">Блог</Link>
                   </div>
                   <div className="media-btn">

@@ -10,6 +10,8 @@ import NotFound from './Components/NotFound/NotFound'
 import About from './Components/About/About'
 import Dastavka from './Components/Dastavka/Dastavka'
 import Return from './Components/Return/Return'
+import Garant from './Components/Garant/Garant'
+import Cantact from './Components/Contact/Cantact'
 
 const App = () => {
   const location = useLocation();
@@ -34,6 +36,8 @@ const App = () => {
         <Route path='/about' element={<About />} />
         <Route path='/dastavka' element={<Dastavka />} />
         <Route path='/return' element={<Return />} />
+        <Route path='/garant' element={<Garant />} />
+        <Route path='/cantact' element={<Cantact />} />
         <Route path='*' element={<NotFound />} />
       </Routes>
       <Foter />
