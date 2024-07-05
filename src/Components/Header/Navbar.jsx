@@ -23,8 +23,8 @@ const Header = () => {
                 <ul className={menu ? "show" : ""}>
                   <div className="links">
                     <Link  to="/about">О компании</Link>
-                    <Link  to="/Доставка">Доставка и оплата</Link>
-                    <Link  to="/Возврат">Возврат</Link>
+                    <Link  to="/dastavka">Доставка и оплата</Link>
+                    <Link  to="/return">Возврат</Link>
                     <Link  to="/Гарантии">Гарантии</Link>
                     <Link  to="/contact">Контакты</Link>
                     <Link  to="/Блог">Блог</Link>

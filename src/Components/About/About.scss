@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
+}
+
+.conteiner {
+  max-width: 1304px;
+  width: 100%;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+.about_link {
+    padding-top: 116px;
+  a{
+    font-family: Manrope;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21.86px;
+    color: #454545;
+  }
+  svg{
+    font-size: 12px;
+  }
+}
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 250px;
+  flex-wrap: wrap;
+    .box {
+      h3{
+        font-family: Manrope;
+        font-size: 64px;
+        font-weight: 700;
+        line-height: 70.4px;
+      }
+      .box1{
+        max-width: 530px;
+        height: 253px;
+        border-radius: 15px;
+        background: #F2F2F2;
+        width: 100%;
+        margin-top: 20px;
+         h3{
+            padding-top: 32px;
+            padding-left: 32px;
+            font-family: Manrope;
+            font-size: 64px;
+            font-weight: 700;
+            line-height: 70.4px;
+            color: #454545;
+         }
+         p{
+            padding-left: 32px;
+            padding-top: 83px;
+            font-family: Manrope;
+            font-size: 24px;
+            font-weight: 500;color: #454545;
+            line-height: 36px;
+
+         }
+      }
+
+    }
+    .about_txt {
+      p{
+        font-family: Manrope;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 30px;
+        max-width:  640px;
+        height: 810px;
+        width: 100%;
+        color: #454545;
+      }
+    }
+}
+@media(max-width:768px){
+    .bootom{
+        padding-top: 240px;
+    }
+    .about_link {
+        padding-top: 50px;
+      a{
+        font-family: Manrope;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 21.86px;
+        color: #454545;
+      }
+      svg{
+        font-size: 12px;
+      }
+    }
+    .about {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+          .box {
+            h3{
+              font-family: Manrope;
+              font-size: 42px;
+              font-weight: 700;
+              line-height: 70.4px;
+            }
+            .box1{
+              max-width: 530px;
+              height: 253px;
+              border-radius: 15px;
+              background: #F2F2F2;
+              width: 100%;
+              margin-top: 20px;
+               h3{
+                  padding-top: 28px;
+                  padding-left: 32px;
+                  font-family: Manrope;
+                  font-size: 64px;
+                  font-weight: 700;
+                  line-height: 70.4px;
+                  color: #454545;
+               }
+               p{
+                  padding-left: 28px;
+                  padding-top: 83px;
+                  font-family: Manrope;
+                  font-size: 24px;
+                  font-weight: 500;color: #454545;
+                  line-height: 36px;
+      
+               }
+            }
+      
+          }
+          .about_txt {
+            p{
+              font-family: Manrope;
+              font-size: 18px;
+              font-weight: 500;
+              line-height: 30px;
+              max-width:  640px;
+              height: 810px;
+              width: 100%;
+              color: #454545;
+            }
+          }
+      }
+}
+@media(max-width:500px){
+    .about_link {
+        padding-top: 50px;
+      a{
+        font-family: Manrope;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 21.86px;
+        color: #454545;
+      }
+      svg{
+        font-size: 12px;
+      }
+    }
+    .about {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+          .box {
+            h3{
+              font-family: Manrope;
+              font-size: 32px;
+              font-weight: 700;
+              line-height: 70.4px;
+            }
+            .box1{
+              max-width: 530px;
+              height: 253px;
+              border-radius: 15px;
+              background: #F2F2F2;
+              width: 100%;
+              margin-top: 20px;
+               h3{
+                  padding-top: 28px;
+                  padding-left: 32px;
+                  font-family: Manrope;
+                  font-size: 64px;
+                  font-weight: 700;
+                  line-height: 70.4px;
+                  color: #454545;
+               }
+               p{
+                  padding-left: 28px;
+                  padding-top: 83px;
+                  font-family: Manrope;
+                  font-size: 24px;
+                  font-weight: 500;color: #454545;
+                  line-height: 36px;
+      
+               }
+            }
+      
+          }
+          .about_txt {
+            p{
+              font-family: Manrope;
+              font-size: 18px;
+              font-weight: 500;
+              line-height: 30px;
+              max-width:  640px;
+              height: 810px;
+              width: 100%;
+              color: #454545;
+            }
+          }
+      }
+}

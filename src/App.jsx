@@ -7,6 +7,9 @@ import Single from './Components/Single/Single'
 import Wishes from './Components/Wish/Wish'
 import Product_Cart from './Components/ProductC_Cart/Product_Cart'
 import NotFound from './Components/NotFound/NotFound'
+import About from './Components/About/About'
+import Dastavka from './Components/Dastavka/Dastavka'
+import Return from './Components/Return/Return'
 
 const App = () => {
   const location = useLocation();
@@ -28,6 +31,9 @@ const App = () => {
         <Route path='/products/:id' element={<Single />} />
         <Route path='/Wishes' element={<Wishes />} />
         <Route path='/Product_Cart' element={<Product_Cart />} />
+        <Route path='/about' element={<About />} />
+        <Route path='/dastavka' element={<Dastavka />} />
+        <Route path='/return' element={<Return />} />
         <Route path='*' element={<NotFound />} />
       </Routes>
       <Foter />
