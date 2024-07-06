@@ -101,10 +101,11 @@
   max-width: 316px;
   height: 395px;
   width: 100%;
+  position: relative;
   #like {
     position: absolute;
-    padding-left: 280px;
-    padding-top: 35px;
+    left: 260px;
+    top: 20px;
     z-index: 1;
     background: 0;
     border: 0;

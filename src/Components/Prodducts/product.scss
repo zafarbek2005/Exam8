@@ -136,6 +136,7 @@
       }
       .cart {
         padding: 10px;
+        overflow: hidden;
         button {
           font-size: 32px;
           width: 55px;
@@ -202,8 +203,9 @@
       max-width: 230px;
       height: 395px;
       width: 100%;
+      position: relative;
       #like {
-       position: relative;
+       position: absolute;
        left: -70px;
        top: 90px;
       }
@@ -225,7 +227,7 @@
         gap: 1px;
         .cart {
           padding: 10px;
-          overflow: hidden;
+          overflow: hidden !important; 
           svg {
             font-size: 32px;
             border: 2px solid #ffffff;
@@ -254,10 +256,11 @@
       max-width: 200px;
       height: 380px;
       width: 100%;
+      position: relative;
       #like {
-       position: relative;
-       left: -100px;
-       top: 50px;
+       position: absolute;
+       left: 180px;
+       top: 30px;
       }
       .product_image {
         padding-left: 25px;
@@ -302,10 +305,11 @@
       max-width: 200px;
       height: 380px;
       width: 100%;
+      position: relative;
       #like {
-        position: relative;
-        left: -120px;
-        top: 90px;
+        position: absolute;
+        left: 150px;
+        top: 80px;
         
     
       }
