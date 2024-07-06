@@ -7,13 +7,16 @@ import Img2 from './img/img2.svg';
 import Img3 from './img/img3.svg';
 import Img4 from './img/img4.svg';
 import Img5 from './img/img5.svg';
+import { Link } from 'react-router-dom';
 
 const Catalog = () => {
   return (
     <div className="catalog container">
       <div className="catalog_nav">
         <h3>Каталог</h3>
-        <button id='katalog'>Весь каталог <GoArrowRight /></button>
+        <Link to={"/catalog"}> 
+          <button id='katalog'>Весь каталог </button>
+        </Link>
       </div>
       <div className="carts">
         <div className="cart1">
@@ -59,7 +62,9 @@ const Catalog = () => {
           <span>От 540₽ <GoArrowRight /></span>
         </div>
       </div>
-      <button id='katalog1'>Весь каталог <GoArrowRight /></button>
+      <Link to={"/catalog"}> 
+          <button id='katalog1'>Весь каталог </button>
+        </Link>
     </div>
   );
 }

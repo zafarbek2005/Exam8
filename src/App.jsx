@@ -18,6 +18,10 @@ import Login from './Components/pages/login/login';
 import ManageProduct from './Components/pages/Produc_manage/Product_manage';
 import Product_create from './Components/pages/Create_Product/Create'
 import Create_catigory from './Components/pages/Create_caatigory/Create_catigory'
+import Blog from './Components/Blog/Blog';
+import AllProducts from './Components/Allproducts/All'
+import Catalog from './Components/pages/Catalog/Catalog';
+import Manage_catigory from './Components/pages/Manage_catigory/Manage_catigory'
 
 const App = () => { 
   const location = useLocation();
@@ -44,13 +48,17 @@ const App = () => {
         <Route path='/return' element={<Return />} />
         <Route path='/garant' element={<Garant />} /> 
         <Route path='/cantact' element={<Cantact />} />
+        <Route path='/blog' element={<Blog />} />
         <Route path='/login' element={<Login />} />
+        <Route path='/allProducts' element={<AllProducts />} />
+        <Route path='/catalog' element={<Catalog />} />
         <Route path='*' element={<NotFound />} />
         <Route path="/" element={<Auth />}>
           <Route path="admin" element={<Admin />} />
           <Route path="admin/manage-product" element={<ManageProduct />} />
           <Route path="admin/create-product" element={<Product_create />} />
           <Route path="admin/create-category" element={< Create_catigory/>} />
+          <Route path="admin/manage-category" element={< Manage_catigory/>} />
         </Route>
       </Routes>
       <Foter />

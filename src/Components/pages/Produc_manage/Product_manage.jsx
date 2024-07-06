@@ -9,6 +9,7 @@ import {
   useUpdateProductMutation,
 } from "../../context/Api/productapi";
 import { useGetCategoryQuery } from "../../context/Api/Catigory";
+import './manage.scss'
 
 const ManageProduct = () => {
   const { data: products } = useGetProductsQuery();

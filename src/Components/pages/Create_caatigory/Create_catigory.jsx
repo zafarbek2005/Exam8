@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { useCreateCategoryMutation } from "../../context/Api/Catigory";
 import { useGetInputValue } from "../../Hooks/useGetinputValue";
 import { toast } from "react-toastify";
+import './catigory.scss'
 
 let initialState = {
   title: "",

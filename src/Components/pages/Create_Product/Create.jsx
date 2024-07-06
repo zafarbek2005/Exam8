@@ -3,6 +3,7 @@ import { useGetInputValue } from "../../Hooks/useGetinputValue";
 import { useGetCategoryQuery } from "../../context/Api/Catigory";
 import { useCreateProductMutation } from "../../context/Api/productapi";
 import { toast } from "react-toastify";
+import './create.scss'
 
 let initialState = {
   title: "",

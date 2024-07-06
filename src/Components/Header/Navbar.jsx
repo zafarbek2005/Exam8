@@ -47,7 +47,7 @@ const Header = () => {
                   </button>
                 </div>
                 <Link to={"/"}>  
-                  <img src={logo} alt="Logo" />
+                  <img id='bttlogo' src={logo} alt="Logo" />
                   </Link>
               </div>
               <div className="nav__inp">

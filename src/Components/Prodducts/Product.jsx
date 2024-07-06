@@ -84,8 +84,10 @@ const Product = ({ data, isLoading, isError }) => {
   return (
     <>
       <div className="product_link conteiner">
-        <h3 id="product_title">Популярные товары</h3>
+        <h3 id="product_title">Популярные товары</h3>  
+         <Link to={"/allProducts"}> 
         <button id="vce">Все товары <BsArrowRight /></button>
+        </Link>
       </div>
       <div className="category conteiner">
         <ul>

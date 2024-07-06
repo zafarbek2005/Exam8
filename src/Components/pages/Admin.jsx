@@ -6,6 +6,7 @@ import { IoIosLogOut } from "react-icons/io";
 import { useDispatch } from "react-redux";
 import { logout } from "../context/Auth/AuthSlice";
 import { useNavigate } from "react-router-dom";
+import './admin.scss'
 
 const Admin = () => {
   const dispatch = useDispatch();
