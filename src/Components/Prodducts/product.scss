@@ -203,7 +203,7 @@
       width: 100%;
       #like {
        position: relative;
-       left: 210px;
+       left: -70px;
        top: 90px;
       }
       .product_image {
@@ -255,8 +255,8 @@
       width: 100%;
       #like {
        position: relative;
-       left: 180px;
-       top: 40px;
+       left: -100px;
+       top: 50px;
       }
       .product_image {
         padding-left: 25px;
@@ -302,10 +302,11 @@
       height: 380px;
       width: 100%;
       #like {
+        position: relative;
+        left: -120px;
+        top: 90px;
         
-     position: relative;
-     left: 150px;
-     top: 90px;
+    
       }
       .product_image {
         padding-left: 25px;
