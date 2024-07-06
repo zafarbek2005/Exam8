@@ -1,3 +1,5 @@
+import { BsFillPersonFill } from "react-icons/bs"; 
+import { IoMdCreate } from "react-icons/io"; 
 import React from "react";
 import { GoArrowLeft } from "react-icons/go";
 import { IoIosLogOut } from "react-icons/io";
@@ -18,22 +20,22 @@ const Admin = () => {
               <h1 onClick={() => navigate("/")} className="admin__panel__title">
                 <GoArrowLeft />
                 Admin Dashboard
-              </h1>
+              </h1> <br />
               <ul>
                 <li onClick={() => navigate("/admin/create-product")}>
-                  <img src="" alt="Icon1" />
+                 <IoMdCreate />
                   Create product
-                </li>
+                </li> <br />
                 <li onClick={() => navigate("/admin/manage-product")}>
-                  <img src="" alt="Icon2" />
+                  <BsFillPersonFill />
                   Manage product
-                </li>
+                </li> <br />
                 <li onClick={() => navigate("/admin/create-category")}>
-                  <img src="" alt="Icon1" />
+                <IoMdCreate />
                   Create category
-                </li>
+                </li> <br />
                 <li onClick={() => navigate("/admin/manage-category")}>
-                  <img src="" alt="Icon2" />
+                 <BsFillPersonFill />
                   Manage category
                 </li>
               </ul>

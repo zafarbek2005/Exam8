@@ -25,7 +25,7 @@ const Wishes = () => {
           />
         </button> 
         <div className="product_image">
-          <img src={product.Image_url} alt={product.desc} />
+          <img src={product.url[0]} alt={product.desc} />
         </div>
         <Link to={`products/${product.id}`}>
           <h2>{product.title}</h2>

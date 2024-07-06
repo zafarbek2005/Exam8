@@ -127,7 +127,7 @@ const Product_Cart = () => {
           {cartItems?.map((user) => (
             <tr key={user.id}>
               <td className="img">
-                <img src={user.Image_url} alt={user.title} />
+                <img src={user.url[0]} alt="img.svg" />
               </td>
               <td>
                 <h4>{user.title}</h4><br />

@@ -19,7 +19,7 @@ const Single = () => {
                 {isLoadingProduct ? (
                     <Skeleton height={400} />
                 ) : (
-                    <img src={product?.Image_url} alt={product?.desc} />
+                    <img src={product?.url[0]} alt={product?.desc} />
                 )}
                 <div className="slide">
                     {Array(4).fill().map((_, i) => (
@@ -27,7 +27,7 @@ const Single = () => {
                             {isLoadingProduct ? (
                                 <Skeleton height={100} />
                             ) : (
-                                <img src={product?.Image_url} alt={product?.desc} />
+                                <img src={product?.url[0]} alt={product?.desc} />
                             )}
                         </div>
                     ))}
