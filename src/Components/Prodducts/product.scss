@@ -202,8 +202,9 @@
       height: 395px;
       width: 100%;
       #like {
-        right: 15px;
-        top: 15px;
+       position: relative;
+       left: 210px;
+       top: 90px;
       }
       .product_image {
         padding-left: 45px;
@@ -223,6 +224,7 @@
         gap: 1px;
         .cart {
           padding: 10px;
+          overflow: hidden;
           svg {
             font-size: 32px;
             border: 2px solid #ffffff;
@@ -252,8 +254,9 @@
       height: 380px;
       width: 100%;
       #like {
-        right: 10px;
-        top: 10px;
+       position: relative;
+       left: 180px;
+       top: 40px;
       }
       .product_image {
         padding-left: 25px;
@@ -273,6 +276,8 @@
         gap: 1px;
         .cart {
           padding: 10px;
+        overflow: hidden !important;
+
           svg {
             font-size: 32px;
             border: 2px solid #ffffff;
@@ -297,8 +302,10 @@
       height: 380px;
       width: 100%;
       #like {
-        right: 10px;
-        top: 10px;
+        
+     position: relative;
+     left: 150px;
+     top: 90px;
       }
       .product_image {
         padding-left: 25px;
@@ -316,9 +323,10 @@
       }
       .sena {
         margin-left: -22px;
-        margin-top: -20px;
+        margin-top: 10px;
         .cart {
           padding: 10px;
+          overflow: hidden;
           svg {
             font-size: 32px;
             border: 2px solid #ffffff;
