@@ -27,7 +27,7 @@ const Header = () => {
                     <Link  to="/return">Возврат</Link>
                     <Link  to="/garant">Гарантии</Link>
                     <Link  to="/cantact">Контакты</Link>
-                    <Link  to="/Блог">Блог</Link>
+                    <Link  to="/blog">Блог</Link>
                   </div>
                   <div className="media-btn">
                     <button><RxHamburgerMenu /> Каталог</button>
